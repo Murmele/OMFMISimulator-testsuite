@@ -1,4 +1,5 @@
 -- status: correct
+-- teardown_command: rm ImportExport.xml
 
 setLogFile("omsllog.txt")
 
@@ -42,17 +43,6 @@ unload(model2)
 --   - parameters:
 --     - parameter A
 --     - parameter omega
--- sourceB
---   - FMI 2.0 ME (solver: euler)
---   - path: ../FMUs/me_source1.fmu
---   - GUID: {a31d622a-f33e-4172-9c76-96665d8d1b60}
---   - tool: OpenModelica Compiler OMCompiler v1.12.0-dev.395+gdeeabde
---   - input interface:
---   - output interface:
---     - output y
---   - parameters:
---     - parameter A
---     - parameter omega
 -- adder
 --   - FMI 2.0 ME (solver: euler)
 --   - path: ../FMUs/me_adder1.fmu
@@ -64,6 +54,17 @@ unload(model2)
 --   - output interface:
 --     - output y
 --   - parameters:
+-- sourceB
+--   - FMI 2.0 ME (solver: euler)
+--   - path: ../FMUs/me_source1.fmu
+--   - GUID: {a31d622a-f33e-4172-9c76-96665d8d1b60}
+--   - tool: OpenModelica Compiler OMCompiler v1.12.0-dev.395+gdeeabde
+--   - input interface:
+--   - output interface:
+--     - output y
+--   - parameters:
+--     - parameter A
+--     - parameter omega
 --
 -- # Lookup tables
 --
