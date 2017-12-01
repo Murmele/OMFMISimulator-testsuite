@@ -13,6 +13,18 @@ me_loop1.lua \
 me_test1.lua \
 test2.lua \
 test3.lua \
+cs_BouncingBall.py \
+cs_HelloWorld_Reset.py \
+cs_loop1.py \
+cs_test1.py \
+ImportExport.py \
+Importxml.py \
+me_BouncingBall.py \
+me_HelloWorld_Reset.py \
+me_loop1.py \
+me_test1.py \
+test2.py \
+test3.py \
 
 # Run make failingtest
 FAILINGTESTFILES = \
@@ -21,8 +33,9 @@ FAILINGTESTFILES = \
 # Add them here or they will be cleaned.
 DEPENDENCIES = \
 *.lua \
-Makefile \
+*.py \
 ConnectedFmu.xml \
+Makefile \
 
 CLEAN = `ls | grep -w -v -f deps.tmp`
 
